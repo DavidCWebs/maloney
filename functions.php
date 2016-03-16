@@ -1,5 +1,9 @@
 <?php
 /**
+ * Autoload all the NEW classes: `Castleview\Directory\Class_Name`
+ */
+require __DIR__ . '/vendor/autoload.php';
+/**
  * Sage includes
  *
  * The $sage_includes array determines the code library included in your theme.
