@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace Carawebs\Maloney\Extras;
 
-use Roots\Sage\Setup;
+use Carawebs\Maloney\Setup;
 
 /**
  * Add <body> classes

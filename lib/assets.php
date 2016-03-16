@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Assets;
+namespace Carawebs\Maloney\Assets;
 
 /**
  * Get paths for assets

@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Customizer;
+namespace Carawebs\Maloney\Customizer;
 
-use Roots\Sage\Assets;
+use Carawebs\Maloney\Assets;
 
 /**
  * Add postMessage support

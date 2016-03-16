@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Setup;
+namespace Carawebs\Maloney\Setup;
 
-use Roots\Sage\Assets;
+use Carawebs\Maloney\Assets;
 
 /**
  * Theme setup

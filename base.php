@@ -1,7 +1,7 @@
 <?php
 
-use Roots\Sage\Setup;
-use Roots\Sage\Wrapper;
+use Carawebs\Maloney\Setup;
+use Carawebs\Maloney\Wrapper;
 
 ?>
 
