@@ -11,13 +11,13 @@ class GetContact {
    *
    * @return string Mobile number
    */
-  public static function mobile_number( $source = 'carawebs_address_data' ) {
+  public static function get_mobile_number( $source = 'carawebs_address_data' ) {
 
     return Options::get_options_array( $source )['mobile'];
 
   }
 
-  public static function landline_number() {
+  public static function get_landline_number() {
 
     return Options::get_options_array( 'carawebs_address_data' )['landline'];
 

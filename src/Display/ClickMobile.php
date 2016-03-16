@@ -6,7 +6,7 @@ class ClickMobile extends ClickCall {
 
   public static function button( array $args = [] ) {
 
-    $number = GetContact::mobile_number();
+    $number = GetContact::get_mobile_number();
 
     echo self::render_button( $number, $args );
 
@@ -14,9 +14,9 @@ class ClickMobile extends ClickCall {
 
   public static function text( array $args = [] ) {
 
-    $number = GetContact::mobile_number();
+    $number = GetContact::get_mobile_number();
 
-    self::render_text( $number, $args );
+    echo self::render_text( $number, $args );
 
   }
 

@@ -22,6 +22,24 @@ abstract class ClickCall {
 
   }
 
+  public static function render_text ( $number, array $args ) {
+
+    extract( $args );
+
+    $icon = isset($icon) ? $icon : null;
+    $prefix = isset($prefix) ? $prefix : null;
+    $text = isset($text) ? $text : "Click to Call";
+    $clickable_number = self::clickable_number($number);
+
+
+    ob_start();
+
+    include( get_template_directory() . '/partials/click-to-call-link.php' );
+
+    return ob_get_clean();
+
+  }
+
   public static function clickable_number( $number ) {
 
     $number = str_replace( ' ', '', $number);
