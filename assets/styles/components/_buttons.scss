@@ -1,0 +1,39 @@
+.btn-group-vertical {
+
+  .btn {
+
+    margin-bottom: 10px;
+    border-radius: inherit;
+
+  }
+
+  // If displaying btn-block, it may be necessary to make the containing element
+  // span full width - btn-group normally displays inline-block, which is just
+  // for the widest contained element. When adding `btn-block` class to the
+  // button element, add the `full-width` class to the btn-group container.
+  // ---------------------------------------------------------------------------
+
+  &.full-width {
+
+    display: block;
+
+  }
+
+}
+
+// Make the button group standalone, looks better if they are separated by a vertical margin
+// -----------------------------------------------------------------------------
+.carawebs-social-buttons.btn-group-vertical > .btn,
+.carawebs-social-buttons.btn-group.btn-group-vertical > .btn {
+  &:not(:first-child):not(:last-child) {
+    border-radius: $btn-border-radius-base;
+  }
+  &:first-child:not(:last-child) {
+    @include border-top-radius($btn-border-radius-base);
+    @include border-bottom-radius($btn-border-radius-base);
+  }
+  &:last-child:not(:first-child) {
+    @include border-top-radius($btn-border-radius-base);
+    @include border-bottom-radius($btn-border-radius-base);
+  }
+}

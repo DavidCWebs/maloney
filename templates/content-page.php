@@ -2,12 +2,12 @@
 
 $contact = new Carawebs\Maloney\Fetch\Contact();
 
-Carawebs\Maloney\Display\SocialList::render(['list_classes'=>['btn-group']]);
+Carawebs\Maloney\Display\SocialList::render(['list_classes'=>['carawebs-address']]);
 
 ?>
 <div>
 <?php
-Carawebs\Maloney\Display\SocialList::render(['type'=>'buttons', 'list_classes'=>['btn-group']]);
+Carawebs\Maloney\Display\SocialList::render(['type'=>'buttons', 'button_classes' => ['btn-block']]);
 ?>
 </div>
 <?php

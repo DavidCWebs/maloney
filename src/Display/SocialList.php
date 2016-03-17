@@ -44,15 +44,17 @@ class SocialList {
         $base_unit_classes   = ['social-link'];
         $li_classes = isset( $li_classes ) ? array_merge( $base_unit_classes, $li_classes ) : $base_unit_classes;
         $unit_classes = is_array( $li_classes ) ? implode( ' ', $li_classes ) : null;
+        $partial = '/partials/social-list.php';
 
         break;
 
       case 'buttons':
 
-        $base_list_classes = ['btn-group-vertical', 'carawebs-social-buttons'];
-        $base_unit_classes   = ['btn', 'btn-default', 'btn-block'];
+        $base_list_classes = ['btn-group', 'btn-group-vertical', 'carawebs-social-buttons'];
+        $base_unit_classes   = ['btn', 'btn-default'];
         $button_classes = isset( $button_classes ) ? array_merge( $base_unit_classes, $button_classes ) : $base_unit_classes;
         $unit_classes = is_array( $button_classes ) ? implode( ' ', $button_classes ) : null;
+        $partial = '/partials/social-buttons.php';
 
         break;
 
@@ -71,7 +73,7 @@ class SocialList {
 
     ob_start();
 
-    include( get_template_directory() . '/partials/social-list.php' );
+    include( get_template_directory() . $partial );
 
     echo ob_get_clean();
 
