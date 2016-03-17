@@ -2,12 +2,11 @@
 
 $contact = new Carawebs\Maloney\Fetch\Contact();
 
-var_dump($contact);
+Carawebs\Maloney\Display\Social::render_links();
 
-Carawebs\Maloney\Display\ClickMobile::button();
-
+Carawebs\Maloney\Display\ClickMobile::button(['btn_mobile_classes' => ['btn-block', 'btn-lg'], 'button_text' => 'Call Mobile']);
+Carawebs\Maloney\Display\ClickLandline::button(['btn_mobile_classes' => ['btn-block', 'btn-lg'], 'button_text' => 'Call Landline']);
 Carawebs\Maloney\Display\ClickMobile::text();
-
 Carawebs\Maloney\Display\ClickLandline::button();
 
 echo "<h2>Mobile: " . Carawebs\Maloney\Fetch\GetContact::get_mobile_number() . "</h2>";

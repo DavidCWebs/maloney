@@ -5,14 +5,20 @@ abstract class ClickCall {
 
   public static function render_button( $number, array $args ) {
 
+    // Set default button classes (Bootstrap 3.x)
+    $btn_base     = ['btn', 'btn-default'];
+    $mob_btn_base = ['btn', 'btn-default'];
+
+    // Extract arguments and set defaults
     extract( $args );
-
-    $btn_class = isset($btn_class) ? $button_class : null;
-    $icon = isset($icon) ? $icon : null;
-    $prefix = isset($prefix) ? $prefix : null;
-    $button_text = isset($button_text) ? $button_text : "Click to Call";
-    $clickable_number = self::clickable_number($number);
-
+    $btn_classes        = isset( $btn_classes ) ? array_merge( $btn_base, $btn_classes ) : $btn_base;
+    $btn_mobile_classes = isset( $btn_mobile_classes ) ? array_merge( $mob_btn_base, $btn_mobile_classes) : $mob_btn_base;
+    $btn_classes        = implode( ' ', $btn_classes );
+    $btn_mobile_classes = implode( ' ', $btn_mobile_classes );
+    $icon               = isset( $icon ) ? $icon : null;
+    $prefix             = isset( $prefix ) ? $prefix : null;
+    $button_text        = isset( $button_text ) ? $button_text : "Click to Call";
+    $clickable_number   = self::clickable_number( $number );
 
     ob_start();
 
@@ -24,8 +30,8 @@ abstract class ClickCall {
 
   public static function render_text ( $number, array $args ) {
 
+    // Extract arguments and set defaults
     extract( $args );
-
     $icon = isset($icon) ? $icon : null;
     $prefix = isset($prefix) ? $prefix : null;
     $text = isset($text) ? $text : "Click to Call";
