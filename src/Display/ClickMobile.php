@@ -24,7 +24,7 @@ class ClickMobile extends ClickCall {
 
   public static function text( array $args = [] ) {
 
-    $args['icon'] = '<i class="glyphicon glyphicon-phone"></i>';
+    $args['icon'] = '<i class="glyphicon glyphicon-phone"></i>&nbsp;';
     $number = GetContact::get_mobile_number();
 
     echo self::render_text( $number, $args );

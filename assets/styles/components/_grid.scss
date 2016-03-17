@@ -8,3 +8,8 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+// Footer columns
+.footer-column {
+  @include make-sm-column(3);
+}

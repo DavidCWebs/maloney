@@ -2,7 +2,15 @@
 
 $contact = new Carawebs\Maloney\Fetch\Contact();
 
-Carawebs\Maloney\Display\Social::render_links();
+Carawebs\Maloney\Display\SocialList::render(['list_classes'=>['btn-group']]);
+
+?>
+<div>
+<?php
+Carawebs\Maloney\Display\SocialList::render(['type'=>'buttons', 'list_classes'=>['btn-group']]);
+?>
+</div>
+<?php
 
 Carawebs\Maloney\Display\ClickMobile::button(['btn_mobile_classes' => ['btn-block', 'btn-lg'], 'button_text' => 'Call Mobile']);
 Carawebs\Maloney\Display\ClickLandline::button(['btn_mobile_classes' => ['btn-block', 'btn-lg'], 'button_text' => 'Call Landline']);
