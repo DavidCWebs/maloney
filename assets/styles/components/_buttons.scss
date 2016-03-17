@@ -21,9 +21,9 @@
 
 }
 
-// Make the button group standalone, looks better if they are separated by a vertical margin
+// Make the button group standalone, looks better if they are separated by a margin
 // -----------------------------------------------------------------------------
-.carawebs-social-buttons.btn-group-vertical > .btn,
+.carawebs-social-buttons.btn-group > .btn,
 .carawebs-social-buttons.btn-group.btn-group-vertical > .btn {
   &:not(:first-child):not(:last-child) {
     border-radius: $btn-border-radius-base;

@@ -20,7 +20,10 @@ class SocialList {
   }
 
   /**
-   * [render description]
+   * Display the social media links
+   *
+   * Uses the links stroed in the database for this site. Links can be returned
+   * either in the form of a ul or a button group.
    *
    * Arguments may include:
    * 'group_classes' - classes to be added to the button containing element
