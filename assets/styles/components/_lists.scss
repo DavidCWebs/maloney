@@ -16,3 +16,54 @@ ul.btn-group.btn-group-vertical {
   }
 
 }
+
+ul.services-nav {
+
+  margin-left: 0;
+  padding-left: 0;
+  //margin-top: 40px;
+  margin-bottom: 40px;
+
+  li {
+    padding: 0 0 0 30px;
+    display: block;
+    position: relative;
+    margin-left: 0;
+  }
+
+  li > a {
+
+    display: inline-block;
+    position: relative;
+
+  }
+
+  li:before {
+    
+    font-family: 'FontAwesome';
+    //color: #fff;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 18px;
+    //content: "\f101"; // double right angle
+    //content: "\f105"; // single right angle
+    content: "\f054"; // single right angle
+
+  }
+
+  li.active > a:after {
+
+    font-family: 'FontAwesome';
+    //color: #fff;
+    position: absolute;
+    right: -25px;
+    top: 2px;
+    font-size: 18px;
+    //content: "\f100"; // Double left angle
+    //content: "\f104"; //single left angle
+    content: "\f053"; //single left angle
+
+  }
+
+}

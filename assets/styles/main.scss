@@ -6,12 +6,20 @@
 // endbower
 
 @import "common/global";
+@import "components/background-images";
+@import "components/carousel";
+@import "components/images";
+@import "components/inline-grid";
+@import "components/overlay";
+@import "components/jumbotron";
+@import "components/headings";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
 @import "components/header";
 @import "components/wp-classes";
+@import "components/search-form";
 @import "components/lists";
 @import "layouts/header";
 @import "layouts/sidebar";

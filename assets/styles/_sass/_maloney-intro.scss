@@ -1,0 +1,19 @@
+.intro-sm-1 {
+  height: 275px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  /* Medium screen and smaller */
+  @media (max-width: $screen-md-max) {
+    height: 180px;
+    margin-bottom: 5px;
+  }
+}
+
+.intro-sm-2 {
+  height: 275px;
+  overflow: hidden;
+  /* Medium screen and smaller */
+  @media (max-width: $screen-md-max) {
+    height: 180px;
+  }
+}

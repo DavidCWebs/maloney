@@ -3,3 +3,296 @@
   margin-top: 30px;
 
 }
+
+.navbar {
+
+  li > .dropdown-menu {
+
+    //width: 100%;
+    background: $brand-secondary;
+    border: none;
+    margin-top: 17px;
+
+    li > a {
+
+      padding: 10px 15px;
+      color: #fff;
+      &:hover,
+      &:focus {
+
+        color: #fff;
+        text-decoration: underline;
+        background: $dropdown-link-hover-bg;
+
+      }
+
+    }
+
+  }
+
+  .navbar-top {
+    background-color: #8a8a8a;
+    padding-bottom: 5px;
+  }
+
+}
+
+/**
+ * Opaque navbar - this is for full width images where you want the image to be
+ * visible behind the navbar before the initial scroll.
+ * Add the opaque navbar class to containing header element based on the page frontmatter.
+ *
+ */
+.opaque-navbar.navbar-shrink {
+
+  background: $navbar-opaque-bg;
+
+}
+
+// Styles added when the navbar contracts
+.navbar.top-nav-collapse,
+.main-home .top-nav-collapse,
+.intro-bg-image .top-nav-collapse {
+
+  background: $navbar-background-alt;
+  opacity: 1;
+  padding: 0px;
+  height: 30px;
+  transition: 0.3s;
+
+  li > .dropdown-menu {
+
+    background: $navbar-background-alt;
+    margin-top: 0;
+
+  }
+
+}
+
+/**
+ * Specific styles for when there is a full width background image attached to first section.
+ *
+ * This requires an opaque background on dropdowns, unless the page has been
+ * scrolled - in which case, the background should match the "tightened" navbar
+ * background colour.
+ *
+ */
+.intro-bg-image {
+
+  .navbar li > .dropdown-menu {
+
+    // Conditional set in _variables.scss
+    @if $navbar-shrink == true {
+
+      background: $navbar-inverse-bg;
+
+    }
+
+  }
+
+}
+
+.navbar {
+
+  border: none;
+
+  .navbar-nav {
+
+    li.open > a,
+    li.open > a:hover,
+    li.open > a:focus {
+
+      background-color: transparent;
+
+    }
+
+    li > a {
+
+      color: #fff;
+      font-size: 18px;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+
+      &:focus {
+        text-decoration: underline;
+      }
+
+    }
+
+    .header-phone {
+
+      margin-bottom: 10px;
+
+    }
+
+  }
+
+  .navbar-toggle {
+
+    border-radius: 0;
+    border: solid 1px #fff;
+    border-color: #fff;
+    margin-right: 0;
+    //margin-bottom: 15px;
+    //margin-left: 0;
+    margin-top: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 14px;
+	  font-weight: 400;
+
+  }
+
+  #header-phone,
+  #menu-phone {
+
+    font-size: 16px;
+    line-height: 1.33;
+
+    .btn {
+
+      padding: 6px 10px;
+
+    }
+
+  }
+
+  #header-phone {
+
+    float: right;
+    padding: 0 5px;
+    margin-top: 5px;
+
+  }
+
+  #menu-phone {
+
+    margin: 10px 0;
+
+  }
+
+  .navbar-brand {
+
+    color: $navbar-colour;
+
+  }
+
+}
+
+.navbar-inverse {
+  //background-color: $navbar-background-default;
+  //padding: 40px 0 0 0;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+
+    //border-color: blue;
+    border: none;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+
+}
+
+.nonclick-phone.hidden-xs {
+
+  display:inline !important;
+
+}
+
+#footer .nonclick-phone.hidden-xs {
+
+  display:block !important;
+
+}
+
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+
+  .nonclick-phone.hidden-xs,
+  #footer .nonclick-phone.hidden-xs {
+
+    display:none !important;
+
+  }
+
+  .navbar-brand {
+
+    //display: block;
+    //clear: both;
+    //float: none;
+
+  }
+
+}
+
+/* Large screen & Bigger */
+@media (min-width: $screen-lg) {
+	//
+}
+/* Medium screen and smaller */
+@media (max-width: $screen-md-max) {
+	//
+}
+/* Small screen and smaller */
+@media (max-width: $screen-sm-max) {
+	//
+}
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+	//
+}
+/* smaller than Extra small screen */
+@media (max-width: ($screen-xs - 1)) {
+	//
+}
+
+a {
+  color: $navbar-colour;
+}
+
+.main-logo {
+  a {
+    color: $navbar-colour;
+  }
+}
+
+.nav-justified {
+  width: 100%;
+}
+
+.nav-justified > li {
+  float: none;
+  border: solid 1px #fff;
+}
+
+@media (min-width: 768px){
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+}
+
+.centred-header {
+  .navbar-toggle{
+    float: none;
+  }
+}
+
+.dropdown-col {
+  @media (max-width: 768px){
+    background-color: opacify( $navbar-background-alt, 0.6);
+    margin-top: 3px;
+  }
+}

@@ -1,0 +1,114 @@
+.intro-phone {
+
+	margin: $vertical-margin auto;
+
+	span.nonclick-phone {
+	background: $phone-button-bg;
+	border: none;
+	color: #fff;
+		&:hover {
+			background: darken( $phone-button-bg, 20% );
+			color: #fff;
+		}
+	}
+	.phone-text {
+		font-size: 18px;
+		}
+}
+
+.body-phone {
+
+	margin: $vertical-margin auto;
+	margin-top: 15px;
+	span.nonclick-phone {
+	background: $phone-button-bg;
+	border: none;
+	color: #fff;
+		&:hover {
+			background: darken( $phone-button-bg, 20% );
+			color: #fff;
+		}
+	}
+	.phone-text {
+		font-size: 18px;
+		}
+}
+
+.btn-default {
+	background: $phone-button-bg;
+	color: #fff;
+	border: none;
+}
+
+.header-phone .btn-default {
+
+	margin: $vertical-margin auto;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	background: $phone-button-bg;
+	border: none;
+	color: #fff;
+
+		&:hover {
+			background: darken( $phone-button-bg, 20% );
+			color: #fff;
+		}
+
+	span.nonclick-phone {
+	}
+	.phone-text {
+		font-size: 14px;
+		}
+}
+
+
+.click-phone {
+	@media(min-width: $screen-xs-max) {
+		display: none;
+	}
+}
+
+
+.phone-text {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	//letter-spacing: 2px;
+}
+
+.active-phone {
+	display: none;
+	position: absolute;
+	right: 25px;
+	top: -50px;
+	font-size: 24px;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	color: #fff;
+	}
+
+.active-phone:hover {
+	color: #000;
+}
+
+.ghost, .footer {
+
+	h2 { color: #fff;}
+
+	.intro-phone {
+		a {
+			background: transparent;
+		}
+	}
+
+  .btn,
+  .intro-phone span.nonclick-phone {
+    background: transparent;
+    border: solid 1px #fff;
+  }
+
+}

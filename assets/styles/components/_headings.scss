@@ -1,0 +1,212 @@
+h1, h2, h3, h4 {
+
+  text-transform: uppercase;
+
+}
+
+.intro h2 {
+
+  margin-top: 0;
+  padding-top: 0;
+  //border: solid 1px blue;
+
+}
+
+h3 {
+
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+h4 {
+
+  font-size: 1.2;
+  margin-top: 0px;
+
+}
+
+.navbar-title {
+
+  font-family: $font-family-serif;
+  font-size: 24px;
+  //text-transform: uppercase;
+
+}
+
+.text-inverse {
+
+  h1, h2, h3, h4 {
+
+    color: #fff;
+
+  }
+
+}
+
+.footer {
+
+  h1, h2, h3, h4 {
+
+    color: #fff;
+
+  }
+
+  h3 {
+
+    border-bottom: none;
+
+  }
+
+}
+
+.main {
+  h2 {
+  margin-top: 0;
+  }
+}
+
+.post-header {
+
+  h1{
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+}
+
+h3 {
+
+  border-bottom: solid 1px $light-grey;
+  padding-bottom: 10px;
+
+}
+
+h2 {
+
+  line-height: 1.5;
+  font-size: floor(($font-size-base * 2));
+
+}
+
+.footer h2 {
+
+  line-height: 1.2;
+  font-size: floor(($font-size-base * 1.5));
+  text-transform: none;
+
+}
+
+.services-sidebar h2:first-child {
+
+  margin-top: 0;
+
+}
+
+// Add a background vertically centred line to a h2.
+// To implement: `<h2 class="background-line text-center"><span>Content</span></h2>`
+h2.background-line {
+
+    position: relative;
+    overflow: hidden;
+
+    span {
+
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid $dark-grey;
+
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+
+    }
+
+}
+
+// See http://codepen.io/ericrasch/pen/Irlpm
+h3.background-line {
+    position: relative;
+    overflow: hidden;
+
+    span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: .5em;
+            border-top: 1px solid $light-grey;
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+    }
+
+}
+
+.teaser.header,
+.blog-teasers {
+  a {
+    h2{
+      margin-top: 0;
+      font-size: 22px;
+      line-height: 28px;
+    }
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Large screen & Bigger */
+@media (min-width: $screen-lg) {
+	//
+}
+/* Medium screen and smaller */
+@media (max-width: $screen-md-max) {
+	//
+}
+/* Small screen and smaller */
+@media (max-width: $screen-sm-max) {
+	//
+}
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+	h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+/* smaller than Extra small screen */
+@media (max-width: ($screen-xs - 1)) {
+	//
+}

@@ -1,0 +1,231 @@
+.wrapper {
+
+  margin-top: 100px;
+
+}
+
+.btn {
+
+  background-color: #4a4a4a;
+
+}
+
+.btn-group-lg {
+
+  h3 {
+
+    margin-top: 0px;
+    padding-top: 10px;
+
+  }
+
+  width: 100%;
+}
+
+.sidebar-heading {
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+}
+
+.section {
+
+  padding-top: $vertical-padding-3x;
+  padding-bottom: $vertical-padding-3x;
+
+  position: relative;
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: $vertical-padding-2x;
+  }
+
+  h2.call-to-action {
+    margin: 40px 0;
+  }
+
+}
+
+.dark.section {
+
+  background: #213642;
+  color: #fff;
+
+}
+
+.contact.section {
+
+  //padding-bottom: 0;
+  margin-bottom: 0;
+
+}
+
+.intro.section {
+
+  margin-top: 0;
+
+  h2 {
+
+    margin-bottom: 0;
+
+  }
+
+  h3 {
+
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 40px;
+
+  }
+
+}
+
+.special-offers.section {
+
+  img {
+
+    //background-color: #fff;
+
+  }
+
+  h3 {
+
+    padding-left: 0;
+
+  }
+
+}
+
+.text-inverse.intro-section {
+  color: rgba(0, 0, 0, 0.76);
+  height: 560px;
+
+  h2 {
+    color: rgba(0, 0, 0, 0.76);
+  }
+
+  ul li:before {
+    color: rgba(0, 0, 0, 0.76);
+  }
+
+}
+
+#full-width-carousel {
+
+  //position: absolute;
+
+  height: 100%;
+
+  .item {
+      height: 100%;
+  }
+
+  .carousel-inner {
+      height: 100%;
+  }
+
+  /* Background images are set within the HTML using inline CSS, not here */
+
+  .fill {
+      width: 100%;
+      height: 800px;
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      display: table;
+
+  }
+
+  .valign {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+  }
+
+
+  .cw-well {
+
+    background: $intro-well-background;
+    padding: 40px;
+    //width: 60%;
+    //margin: 0 auto;
+
+  }
+
+}
+
+.services {
+
+  display: inline-block;
+
+  .well {
+    background: rgba( 41, 48, 62, 0.9 );
+    color: #fff;
+    border: none;
+    height: 320px;
+
+    a {
+      color: $light-grey;
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+
+    }
+
+  }
+
+}
+
+
+// Conditions
+// -----------------------------------------------------------------------------
+@if $header-wide == true {
+
+  .intro {
+    margin-top: 150px;
+  }
+}
+@else if $header-wide == false {
+  .intro {
+    margin-top: 80px;
+  }
+
+}
+
+// Media Queries
+// -----------------------------------------------------------------------------
+/* Large screen & Bigger */
+@media (min-width: $screen-lg) {
+  //
+}
+/* Medium screen and smaller */
+@media (max-width: $screen-md-max) {
+  //
+}
+/* Small screen and smaller */
+@media (max-width: $screen-sm-max) {
+  .intro-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+  .section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .intro .well {
+    margin-top: 90px;
+  }
+}
+/* smaller than Extra small screen */
+@media (max-width: ($screen-xs - 1)) {
+  //
+}

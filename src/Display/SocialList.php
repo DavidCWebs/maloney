@@ -2,6 +2,22 @@
 namespace Carawebs\Maloney\Display;
 use Carawebs\Maloney\Fetch\GetContact;
 
+/**
+ * A class that controls links to the defined site social media channels
+ *
+ * The links are controlled by the Carawebs\Project\Fetch\GetContact() class.
+ * Client code should call the `SocialList::render()` method with an array of arguments.
+ * For example:
+ * <?php
+ * SocialList::render( [
+ * 	'type'            => 'buttons', // The type of element to return: 'buttons' or 'list'
+ * 	'li_classes'      => '',        // Array of classes for the li elements
+ * 	'button_classes'  => [],        // Array of button classes
+ * 	'list_classes'    => []         // Array of classes to be passed to the <ul>
+ * ] );
+ * ?>
+ *
+ */
 class SocialList {
 
   /**
@@ -59,11 +75,7 @@ class SocialList {
         $unit_classes = is_array( $button_classes ) ? implode( ' ', $button_classes ) : null;
         $partial = '/partials/social-buttons.php';
 
-        break;
-
-      default:
-        # code...
-        break;
+      break;
 
     }
 

@@ -1,0 +1,9 @@
+.blog {
+  .alert {
+
+    &.alert-info {
+      background: lighten( $light-grey, 1% );
+      margin-bottom: 10px;
+    }
+  }
+}

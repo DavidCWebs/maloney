@@ -1,0 +1,231 @@
+html,
+body {
+  //background: $main-background;
+  height: 100%;
+  line-height: 1.6;
+  color: $main-text-colour;
+  font-size: 18px;
+
+}
+
+hr {
+  border-top: 1px solid $light-grey;
+}
+
+.well {
+    background: rgba( 41, 48, 62, 0.2 );
+    color: #fff;
+    border: none;
+    a {
+      color: #fff;
+    }
+    //height: 300px;
+
+  }
+
+a {
+  color: #b5aeae;
+  //text-decoration: underline;
+  &:hover {
+    color: #6b7295;
+    text-decoration: none;
+  }
+}
+
+#go-top {
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  display: none;
+
+}
+
+.thumbnail {
+  min-height: 200px;
+}
+
+a#go-top {
+  background: $brand-orange;
+  border: solid 1px $dark-grey;
+  color: #fff;//#0e7488;
+  font-size: 40px;
+
+}
+
+.page-scroll {
+
+  .fa-chevron-down {
+
+    font-size: 40px;
+    color: #fff;
+
+    &:hover {
+      //font-size: 42px;
+      opacity: 0.9;
+    }
+
+  }
+}
+
+.btn-circle {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 60px;
+  border: solid 1px #fff;
+  margin-top: 40px;
+}
+
+.service-intro {
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 40px;
+  }
+}
+
+.text-primary {
+  //color: red;
+  //&:hover { color: yellow; }
+  }
+
+blockquote {
+  footer {
+    color: #333;
+  }
+  border-left: none;
+
+  background: $blockquote-bg;
+  color: $blockquote-fg;
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    font-size: 30px;
+    color: $blockquote-fg;
+  }
+
+}
+
+.emphasis-block {
+  color: $emphasis-colour;
+  background: $emphasis-background;
+  padding: 20px;
+
+}
+
+.testimonials.section {
+  blockquote {
+  border-left: none;
+  background: transparent;
+  color: $dark-grey;
+  footer {
+      color: $dark-grey;
+    }
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f10d";
+    font-size: 30px;
+    color: $light-grey;
+  }
+}
+
+}
+
+.well.opaque {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 40px;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  //top: 60px;
+  //max-width: 600px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .pull-right-sm {
+    float: right;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .pull-right-md {
+    float: right;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .pull-right-lg {
+    float: right;
+  }
+}
+
+.bottom-space {
+  padding-bottom: 30px;
+}
+
+.top-space-2 {
+  margin-top: 30px;
+}
+
+.top-space {
+  padding-top: 150px;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.top-space-tiny {
+  padding-top: 8px;
+}
+
+.float-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.top-margin {
+  margin-top: 100px;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+/* Large screen & Bigger */
+@media (min-width: $screen-lg) {
+    //
+}
+/* Medium screen and smaller */
+@media (max-width: $screen-md-max) {
+    //
+}
+/* Small screen and smaller */
+@media (max-width: $screen-sm-max) {
+    //
+}
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+  .intro {
+    display: block;
+    .intro-body {
+      display: block;
+    }
+  }
+    //
+}
+/* smaller than Extra small screen */
+@media (max-width: ($screen-xs - 1)) {
+    //
+}

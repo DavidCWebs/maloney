@@ -1,12 +1,8 @@
-// Glyphicons font path
-$icon-font-path:        "../fonts/";
-
-// Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
-
-// Colors
-//$brand-primary:         #27ae60;
+//This sets the background cover image for the frontpage
+$intro-background-image: url(../assets/images/big-images/frontpage-main.jpg);
+$services-background-image: url(../assets/images/big-images/photo-1436915947297-3a94186c8133.jpg);
+$blog-background-image: url(../assets/images/big-images/blog-stone.jpg);
+$about-background-image: url(../assets/images/big-images/blog-stone.jpg);
 
 $light-opaque-background:      rgba(255,255,255,0.5);
 

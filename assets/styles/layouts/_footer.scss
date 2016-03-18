@@ -1,0 +1,31 @@
+.footer {
+
+  padding-bottom: $vertical-padding;
+  background-color: $footer-background;
+  color: $footer-colour;
+
+  a.social-icons {
+
+    color: #fff;
+
+    &:hover {
+
+      opacity: 0.6;
+
+    }
+
+  }
+
+}
+
+.cw-credit {
+
+  font-size: 14px;
+
+  a {
+
+    text-decoration: underline;
+
+  }
+  
+}

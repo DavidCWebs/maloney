@@ -8,7 +8,20 @@ namespace Carawebs\Maloney\Wrapper;
  * @link https://roots.io/sage/docs/theme-wrapper/
  * @link http://scribu.net/wordpress/theme-wrappers.html
  */
+function container() {
 
+  if ( is_page_template( ['template-landing-page.php', 'template-custom-about.php'] ) || is_front_page() ) {
+
+    return " container-fluid";
+
+
+  } else {
+
+    return " container";
+
+  }
+
+}
 function template_path() {
   return SageWrapping::$main_template;
 }

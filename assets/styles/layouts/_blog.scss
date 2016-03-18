@@ -1,0 +1,47 @@
+.readmore {
+  margin-top: 10px;
+}
+
+.blog-post {
+  h2 {
+    font-size: 24px;
+    //border-bottom: solid 2px $brand-primary;
+  }
+}
+
+.blog-teasers {
+  font-size: 16px;
+  margin-bottom: 60px;
+  &:last-child {}
+}
+
+.blog-intro {
+  h1 {
+    //color: #fff;
+  }
+  color: $dark-grey;
+}
+
+.blog-bg {
+
+  background: $blog-background-image no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
+  padding-bottom: 100px;
+  background-position: top;
+
+}
+
+.post-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.blog-teasers {
+
+
+}
