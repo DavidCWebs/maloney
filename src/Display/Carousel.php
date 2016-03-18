@@ -18,7 +18,7 @@ class Carousel {
 
     $data = new \Carawebs\Maloney\Fetch\PostMeta( get_the_ID() );
 
-    $subfields = empty( $subfields )  ? ['image' => ['image_ID', $image_size], 'content' => 'text' ] : $subfields;
+    $subfields = empty( $subfields )  ? ['image' => ['image_ID', $image_size], 'description' => 'text' ] : $subfields;
 
     return $data->repeater( $fieldname, $subfields );
 

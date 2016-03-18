@@ -1,6 +1,6 @@
 <?php
 // replace .carousel-fade with .slide
-//var_dump( $images );
+var_dump( $images );
 ?>
 <div id="main-carousel" class="carousel carousel-fade" data-interval="false">
   <ol class="carousel-indicators">
@@ -29,7 +29,7 @@
         <div class="item<?= 0 == $i ? ' active' : null; ?>">
           <img src="<?= $image['image']['url']; ?>" alt="<?= $image['image']['alt']; ?>" title="<?= $image['image']['title']; ?>" class="img-responsive" height="<?= $image['image']['height']; ?>" width="<?= $image['image']['width']; ?>">
           <div class="caption-container">
-            <h4 class="caption"><?= $image['title'] ; ?></h4>
+            <h4 class="caption"><?= $image['description'] ; ?></h4>
           </div>
         </div>
         <?php
