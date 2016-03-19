@@ -36,4 +36,78 @@
     @include border-top-radius($btn-border-radius-base);
     @include border-bottom-radius($btn-border-radius-base);
   }
+
 }
+
+.light-text {
+
+  .btn-default {
+
+    background: transparent;
+    color: #fff;
+
+  }
+
+}
+
+.ghost.btn-default {
+
+	background: transparent;
+	border: solid 1px #fff;
+	transition: all 0.5s;
+
+	&:hover,
+	&:active,
+	&:focus {
+
+		background: $brand-blue-grey;
+		color: #fff;
+
+	}
+
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 0;
+}
+
+.justified-container {
+
+	margin-left: -5px;
+	margin-right: -5px;
+
+	.btn-group-justified {
+
+		border-spacing: 5px;
+
+	}
+
+}
+
+.intro .justified-container {
+
+	.nonclick-phone {
+
+		display: inline-block;
+
+	}
+
+	margin-left: -20px;
+	margin-right: -20px;
+
+	.btn-group-justified {
+
+		border-spacing: 20px;
+
+	}
+
+}
+
+
+// .intro .justified-container {
+//     margin-left: -20px;
+//     margin-right: -20px;
+// }

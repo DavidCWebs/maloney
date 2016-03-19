@@ -4,7 +4,7 @@
       <div class="opaque-layer"></div>
       <div class="container-fluid">
         <div class="col-md-10 col-md-offset-1">
-          <div class="jumbotron">
+          <div class="jumbotron light-text">
             <div class="row">
               <div class="col-md-5">
                 <div class="lead">
@@ -17,7 +17,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  {% include calls-to-action/intro-cta.html %}
+                  <?php include_once( get_template_directory() . '/partials/frontpage/intro-cta.php' ); ?>
                 </div>
               </div>
               <div class="col-md-6 col-md-offset-1">
