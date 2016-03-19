@@ -21,7 +21,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-md-offset-1">
-                <?= Carawebs\Maloney\Display\Carousel::the_carousel(); ?>
+                <?= Carawebs\Maloney\Display\Carousel::render(['image_size' => '780slide']); ?>
               </div>
             </div>
           </div>

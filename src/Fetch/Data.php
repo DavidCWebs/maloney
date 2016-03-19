@@ -87,6 +87,8 @@ abstract class Data {
 
     $image_object = wp_prepare_attachment_for_js( $image_ID );
 
+    //var_dump($image_object);
+
     $image_size = $meta[1];
 
     $output = [

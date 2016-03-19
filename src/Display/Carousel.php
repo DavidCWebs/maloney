@@ -1,39 +1,25 @@
 <?php
 
 namespace Carawebs\Maloney\Display;
+use Carawebs\Maloney\Fetch\PostMeta;
 
 class Carousel {
 
   /**
-   * Fetch image data that has been stored by means of an ACF repeater field
-   *
-   * The subfield name is assumed to be 'image'.
-   *
-   *
-   * @param  string $fieldname  The fieldname
-   * @param  string $image_size Required image size
-   * @return array              Array of image data
-   */
-  public static function carousel_data( $fieldname, $image_size, $subfields ) {
-
-    $data = new \Carawebs\Maloney\Fetch\PostMeta( get_the_ID() );
-
-    $subfields = empty( $subfields )  ? ['image' => ['image_ID', $image_size], 'description' => 'text' ] : $subfields;
-
-    return $data->repeater( $fieldname, $subfields );
-
-  }
-
-  /**
    * Construct HTML for a Bootstrap 3 carousel
    *
-   * @param  string $fieldname  The fieldname
-   * @param  string $image_size Required image size
+   * @param  args
    * @return string             HTML for carousel
    */
-  public static function the_carousel( $fieldname = 'carousel', $image_size = 'full', $type = 'basic', array $subfields = [] ) {
+  public static function render( array $args = [] ) {
 
-    $images = self::carousel_data( $fieldname, $image_size, $subfields );
+    $base_classes = ['carousel'];
+    $classes = ! empty( $args['classes'] ) ? array_merge( $base_classes, $args['classes'] ) : $base_classes;
+    $classes = implode( ' ', $classes );
+    $type = ! empty( $args['type'] ) ? $args['type'] : 'basic';
+    $transition = ! empty( $args['transition'] ) && 'slide' === ( $args['transition'] ) ? 'slide' : 'carousel-fade';
+
+    $images = self::data( $args );
 
     // If there are no images set, go back empty
     // -------------------------------------------------------------------------
@@ -55,8 +41,34 @@ class Carousel {
         break;
     }
 
-    return ob_get_clean();
+    echo ob_get_clean();
 
   }
+
+  /**
+   * Fetch image data that has been stored by means of an ACF repeater field
+   *
+   * The subfield name is assumed to be 'image'.
+   *
+   *
+   * @param  string $fieldname  The fieldname
+   * @param  string $image_size Required image size
+   * @return array              Array of image data
+   */
+  public static function data( array $args ) {
+
+    extract( $args );
+
+    $image_size = ! empty( $image_size ) ? $image_size : 'full';
+    $text_subfield = ! empty( $text_subfield ) ? $text_subfield : 'description';
+
+    $subfields = ! empty( $subfields ) ? $subfields : ['image' => ['image_ID', $image_size], $text_subfield => 'text' ];
+    $fieldname = ! empty( $fieldname ) ? $fieldname : 'carousel';
+
+    $data = new PostMeta( get_the_ID() );
+    return $data->repeater( $fieldname, $subfields );
+
+  }
+
 
 }
