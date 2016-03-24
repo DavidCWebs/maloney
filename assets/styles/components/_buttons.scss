@@ -39,12 +39,26 @@
 
 }
 
-.light-text {
+.light-text,
+.navbar-inverse {
 
   .btn-default {
 
     background: transparent;
     color: #fff;
+
+  }
+
+}
+
+.navbar-inverse {
+
+  .btn {
+
+    margin: 7px 0 0 20px;
+    background: transparent;
+    border-color: #fff;
+    line-height: 22px;
 
   }
 
@@ -106,8 +120,20 @@
 
 }
 
+.btn-default {
 
-// .intro .justified-container {
-//     margin-left: -20px;
-//     margin-right: -20px;
-// }
+	background: transparent;
+	border: solid 1px $text-color;
+	transition: all 0.5s;
+  line-height: 30px;
+
+	&:hover,
+	&:active,
+	&:focus {
+
+		background: $brand-blue-grey;
+		color: #fff;
+
+	}
+
+}

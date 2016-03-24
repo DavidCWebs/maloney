@@ -106,7 +106,7 @@ $grid-columns:              12 !default;
 
 // Fonts & Padding
 // -----------------------------------------------------------------------------
-$font-size-base:          16px;
+$font-size-base:          18px;
 $vertical-padding-intro:  400px;
 $vertical-padding-half:   10px;
 $vertical-padding:        20px;
@@ -125,6 +125,8 @@ $font-family-cursive:     Condiment, serif;
 // Set the main font for the site
 // -----------------------------------------------------------------------------
 $font-family-base:        $font-family-sans-serif;
+
+$jumbotron-font-size: 24px;
 
 // Border radius
 // -----------------------------------------------------------------------------

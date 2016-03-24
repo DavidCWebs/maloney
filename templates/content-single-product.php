@@ -6,8 +6,7 @@
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
-      <div class="lead">Interested? Call us to find out more.</div>
-      {% include general/post-phone.html %}
+      <?php Carawebs\Maloney\Display\CTA::content_CTA(); ?>
     </div>
   </article>
 <?php endwhile; ?>

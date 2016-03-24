@@ -1,0 +1,411 @@
+{
+    "key": "group_56f40477471b4",
+    "title": "Product Information",
+    "fields": [
+        {
+            "key": "field_56f4050274e8e",
+            "label": "Details",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56f4051474e8f",
+            "label": "Manufacturer",
+            "name": "manufacturer",
+            "type": "text",
+            "instructions": "Enter the manufacturer's name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56f40eb20f09b",
+            "label": "Serial Number",
+            "name": "serial_number",
+            "type": "text",
+            "instructions": "Enter the product serial number.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56f408dd5366e",
+            "label": "Price",
+            "name": "price",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56f408ea5366f",
+            "label": "On Sale",
+            "name": "on_sale",
+            "type": "true_false",
+            "instructions": "Is this item on sale? If it is, tick this box.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_56f4090f5a34b",
+            "label": "Original Price",
+            "name": "original_price",
+            "type": "number",
+            "instructions": "Enter the original price. It will be displayed with the \u20ac symbol.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56f408ea5366f",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "placeholder": "",
+            "prepend": "\u20ac",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": "0.01",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56f40df487107",
+            "label": "Current Price",
+            "name": "current_price",
+            "type": "number",
+            "instructions": "Enter the current price. A \u20ac symbol will be added automatically.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 300,
+            "placeholder": "",
+            "prepend": "\u20ac",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": "0.01",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56e717321ab09",
+            "label": "Call to Action",
+            "name": "call_to_action",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56e717471ab0a",
+            "label": "Show Call to Action",
+            "name": "show_call_to_action",
+            "type": "true_false",
+            "instructions": "Display a call to action at the end of the page content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_56e717751ab0b",
+            "label": "Call to Action Type",
+            "name": "call_to_action_type",
+            "type": "radio",
+            "instructions": "Select the type of call to action.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "email": "Email",
+                "phone": "Phone",
+                "combined": "Phone & Email"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "combined",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_56e720a60689c",
+            "label": "Call to Action Title",
+            "name": "call_to_action_title",
+            "type": "text",
+            "instructions": "Enter the title for this call to action.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Contact Samantha",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56e720d60689d",
+            "label": "Call to Action Intro",
+            "name": "call_to_action_intro",
+            "type": "text",
+            "instructions": "Enter a paragraph to introduce the call to action if required.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56e721120689e",
+            "label": "Number Prefix",
+            "name": "number_prefix",
+            "type": "text",
+            "instructions": "Enter a prefix for the phone number if required. Leave blank and the site default will be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56e72159d8dd1",
+            "label": "Email Text",
+            "name": "email_text",
+            "type": "text",
+            "instructions": "Enter text for the email button, if required. Leave blank and the site default will be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56f43654f58b3",
+            "label": "Additional Images",
+            "name": "additional_images",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_56f441a368365",
+            "label": "Image Display Format",
+            "name": "additional_images_display_format",
+            "type": "radio",
+            "instructions": "Select how you'd like to display the images.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "carousel": "An image carousel",
+                "image-column": "A column of static images"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "image-column",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_56f4366cf58b4",
+            "label": "Images",
+            "name": "images",
+            "type": "repeater",
+            "instructions": "Enter additional images by clicking \"Add Media\".",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Image",
+            "sub_fields": [
+                {
+                    "key": "field_56f436d7f58b5",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "Choose an image.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_56f436fbf58b6",
+                    "label": "Descriptive Text",
+                    "name": "description",
+                    "type": "text",
+                    "instructions": "Enter some descriptive text for this image, if required.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1458856299
+}
