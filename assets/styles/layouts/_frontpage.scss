@@ -31,10 +31,16 @@
 
   padding-top: $vertical-padding-3x;
   padding-bottom: $vertical-padding-3x;
-
   position: relative;
   margin-top: $vertical-margin;
   margin-bottom: $vertical-margin;
+
+  &.full-width {
+
+    margin-left: -15px;//
+    margin-right: -15px;
+
+  }
 
   h2 {
     margin-top: 0px;

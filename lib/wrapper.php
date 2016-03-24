@@ -10,16 +10,19 @@ namespace Carawebs\Maloney\Wrapper;
  */
 function container() {
 
-  if ( is_page_template( ['template-landing-page.php', 'template-custom-about.php'] ) || is_front_page() ) {
+  // The default is 'container-fluid'
 
-    return " container-fluid";
-
-
-  } else {
-
-    return " container";
-
-  }
+  // if ( is_page_template( ['template-landing-page.php', 'template-custom-about.php'] ) || is_front_page() ) {
+  //
+  //   return " container-fluid";
+  //
+  //
+  // } else {
+  //
+  //   return " container";
+  //
+  // }
+  return " container-fluid";
 
 }
 function template_path() {

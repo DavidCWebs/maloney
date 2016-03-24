@@ -4,9 +4,9 @@ namespace Carawebs\Maloney\Display;
 use Carawebs\Maloney\Fetch\PostMeta;
 
 /**
- * Returns an image carousel
+ * Returns a column of repeater images
  */
-class Carousel extends RepeaterImages {
+class ImagesColumn extends RepeaterImages {
 
   /**
    * Construct HTML for a Bootstrap 3 carousel
@@ -16,11 +16,10 @@ class Carousel extends RepeaterImages {
    */
   public static function render( array $args = [] ) {
 
-    $base_classes = ['carousel'];
+    $base_classes = ['image-column'];
     $classes = ! empty( $args['classes'] ) ? array_merge( $base_classes, $args['classes'] ) : $base_classes;
     $classes = implode( ' ', $classes );
     $type = ! empty( $args['type'] ) ? $args['type'] : 'basic';
-    $transition = ! empty( $args['transition'] ) && 'slide' === ( $args['transition'] ) ? 'slide' : 'carousel-fade';
 
     $images = self::data( $args );
 
@@ -30,19 +29,7 @@ class Carousel extends RepeaterImages {
 
     ob_start();
 
-    switch ( $type ) {
-      case 'background':
-        include_once( get_template_directory() . '/partials/background-image-carousel.php' );
-        break;
-
-      case 'basic':
-        include_once( get_template_directory() . '/partials/basic-carousel.php' );
-        break;
-
-      default:
-        # code...
-        break;
-    }
+    include_once( get_template_directory() . '/partials/image-column.php' );
 
     return ob_get_clean();
 

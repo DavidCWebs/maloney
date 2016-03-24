@@ -17,6 +17,12 @@ h3 {
   padding: 10px;
   font-size: 20px;
 
+  .intro & {
+
+    padding-left: 0;//
+
+  }
+
 }
 
 h4 {
